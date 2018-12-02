@@ -22,4 +22,19 @@ class CardTest {
         assertEquals(4, card2.suit)
         assertEquals("Diamonds", card2.suitName)
     }
+
+    @Test
+    fun t2() {
+        val x = if (3 < 4) "test1" else "test2"
+
+        val suit = 2
+        val y = when (suit) {
+            1 -> "Spades"
+            2 -> "Hearts"
+            else -> "Wrong"
+        }
+
+        println("x = ${x}")
+        println("y = ${y}")
+    }
 }
