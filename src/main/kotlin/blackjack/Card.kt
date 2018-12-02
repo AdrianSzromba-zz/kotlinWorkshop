@@ -11,7 +11,7 @@ class Card(val value: Int, val suit: Int) {
             2 -> "Hearts"
             3 -> "Clubs"
             4 -> "Diamonds"
-            else -> throw IllegalStateException
+            else -> throw IllegalStateException()
         }
 
     val valueName: String
