@@ -17,10 +17,11 @@ class CardTest {
         assertEquals(1, card1.value)
         assertEquals(1, card1.suit)
         assertEquals("Spades", card1.suitName)
+        assertEquals("Ace", card1.valueName)
 
         assertEquals(13, card2.value)
         assertEquals(4, card2.suit)
-        assertEquals("Diamonds", card2.suitName)
+        assertEquals("King", card2.valueName)
     }
 
     @Test
@@ -36,5 +37,9 @@ class CardTest {
 
         println("x = ${x}")
         println("y = ${y}")
+
+        val r = 1..10
+        println(r.contains(6))
+        println(6 in r) // that's the same like contains
     }
 }
