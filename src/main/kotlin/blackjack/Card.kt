@@ -23,4 +23,13 @@ class Card(val value: Int, val suit: Int) {
             13 -> "King"
             else -> throw IllegalStateException()
         }
+
+    val name get() = "$valueName of $suitName" //by $ sign, variable is part of function
+
+    val points:Int get() = when(value) {
+        in 1..9 -> value
+        in 10..13 -> 10
+        else -> throw IllegalStateException()
+    }
+
 }
