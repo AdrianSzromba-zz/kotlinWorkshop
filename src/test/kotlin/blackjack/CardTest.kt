@@ -18,10 +18,14 @@ class CardTest {
         assertEquals(1, card1.suit)
         assertEquals("Spades", card1.suitName)
         assertEquals("Ace", card1.valueName)
+        assertEquals("Ace of Spades", card1.name)
+        assertEquals(1, card1.points)
 
         assertEquals(13, card2.value)
         assertEquals(4, card2.suit)
         assertEquals("King", card2.valueName)
+        assertEquals("King of Diamonds", card2.name)
+        assertEquals(10, card2.points)
     }
 
     @Test
