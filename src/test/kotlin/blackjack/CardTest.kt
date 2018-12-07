@@ -1,7 +1,9 @@
 package blackjack
 
 import org.junit.Test
+import java.lang.IllegalArgumentException
 import kotlin.test.assertEquals
+import kotlin.test.fail
 
 class CardTest {
 
@@ -26,6 +28,21 @@ class CardTest {
         assertEquals("King", card2.valueName)
         assertEquals("King of Diamonds", card2.name)
         assertEquals(10, card2.points)
+
+        try {
+            val card3 = Card(1,5)
+            fail("Should never get here")
+        } catch (e: IllegalArgumentException) {
+            //good
+        }
+
+        try {
+            val card3 = Card(14,1)
+            fail("Should never get here")
+        } catch (e: IllegalArgumentException) {
+            //good
+        }
+
     }
 
     @Test
