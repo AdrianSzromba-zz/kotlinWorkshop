@@ -4,6 +4,11 @@ import java.lang.IllegalStateException
 
 class Card(val value: Int, val suit: Int) {
 
+    init { //init block - kind of a constructor
+        require(value in 1..13) //if not, throws IllegalArgumentExeption
+        require(suit in 1..4)
+    }
+
     //    val suitName: String get() = "Spades" //Shortcut to create getter if there is onle line return statement
     val suitName: String
         get() = when (suit) { //works like switch in java
