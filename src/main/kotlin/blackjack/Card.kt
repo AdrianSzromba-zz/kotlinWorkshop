@@ -6,7 +6,12 @@ class Card(val value: Int, val suit: Int) {
 
     init { //init block - kind of a constructor
         require(value in 1..13) //if not, throws IllegalArgumentExeption
-        require(suit in 1..4)
+        require(suit in 1..4) // use this to check to arguments
+
+        /**
+        check(value in 1..13) // throws illegalStateExeption, use this to check others variables
+        assert(value in 1..13) // not in production process
+        */
     }
 
     //    val suitName: String get() = "Spades" //Shortcut to create getter if there is onle line return statement
