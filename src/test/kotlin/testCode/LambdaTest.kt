@@ -17,5 +17,16 @@ class LambdaTest {
 
         fun1()
         println(fun2(1))
+
+        useFunctions(fun1)
+    }
+
+    @Test
+    fun testLambdaFunction() {
+
+    }
+
+    fun useFunctions(f1: () -> Unit) { // takes one argument of type: function
+        f1() // call function that is passed as arg
     }
 }
