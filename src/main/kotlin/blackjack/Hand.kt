@@ -7,11 +7,16 @@ class Hand(val name: String) {
     val points: Int
         get() {
             var t = 0
-            for (c in cards) {
-                t += c.points
-            }
+            for (c in cards) t += c.points
             return t
         }
+//    second method
+//    val points: Int
+//        get() {
+//            var t = 0
+//            cards.forEach({t += it.points})
+//            return t
+//        }
 
     fun add(card: Card) {
         cards.add(card)
