@@ -20,7 +20,7 @@ class HandTest {
         assertEquals(11, h1.points)
         assertEquals(2, h1.size)
 
-        assertEquals("Dealer", h1.name)
+        assertEquals("Dealer", h2.name)
         assertEquals(6, h2.points)
         assertEquals(3, h2.size)
     }
