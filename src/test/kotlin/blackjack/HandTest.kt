@@ -25,3 +25,4 @@ class HandTest {
         assertEquals(3, h2.size)
     }
 }
+
